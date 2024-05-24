@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhurji: Scrambled Passwords</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body>
+    <button id="dark-mode-toggle">
+        <img src="dark.png" alt="Dark mode toggle" style="width: 10vw; height: auto;">
+    </button>
+        <div class="container">
+        <h1>Bhurji: I like my passwords the way I like my eggs, scrambled</h1>
+        <form id="password-form">
+            <div class="form-group">
+                <label for="login">Login:</label>
+                <input type="text" id="login" name="login">
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password">
+            </div>
+            <div class="form-group">
+                <label for="file">File:</label>
+                <input type="file" id="file" name="file">
+            </div>
+            <div class="form-group checkbox-group">
+                <input type="checkbox" id="show-password" name="show-password">
+                <label for="show-password">Show password</label>
+            </div>
+            <div class="form-group checkbox-group">
+                <input type="checkbox" id="copy-to-clipboard" checked>
+                <label for="copy-to-clipboard">Copy to Clipboard</label>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Generate Password">
+            </div>
+        </form>
+        <p id="result"></p>
+    </div>
+    <div id="clouds-container"></div>
+    <script src="bhurji.js"></script>
+</body>
+</html>
